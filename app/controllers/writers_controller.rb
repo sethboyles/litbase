@@ -4,7 +4,7 @@ class WritersController < ApplicationController
   # GET /writers
   # GET /writers.json
   def index
-    @writers = Writer.all
+    render json: Writer.all
   end
 
   # GET /writers/1

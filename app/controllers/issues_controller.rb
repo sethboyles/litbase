@@ -1,10 +1,12 @@
 class IssuesController < ApplicationController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
 
+  respond_to :json
+
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.all
+    render json: Issue.all
   end
 
   # GET /issues/1

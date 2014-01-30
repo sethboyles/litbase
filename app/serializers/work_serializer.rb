@@ -1,3 +1,5 @@
 class WorkSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :title
+
+  has_one :writer
 end
