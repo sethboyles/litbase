@@ -1,0 +1,51 @@
+
+#nav {
+  $border: #AAAAAA;
+
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  font-family: 'EB Garamond';
+
+  .nav-box-left {
+    float: left;
+    height: 100%;
+    border-right: 1px solid $border;
+    border-bottom: 1px solid $border;
+  }
+
+  .nav-box-right {
+    float:right;
+    height: 100%;
+    border-left: 1px solid $border;
+    border-bottom: 1px solid $border;
+  }
+
+  .nav-box-left:hover {
+    margin-top: -1px;
+    margin-left: -1px;
+    border: 1px solid black;
+  }
+
+  .nav-box-right:hover {
+    margin-top: -1px;
+    margin-right: -1px;
+    border: 1px solid black;
+  }
+
+  .nav-item {
+    height: 100%;
+    padding: 10px;
+    padding-top: 15px;
+  }
+
+  .logo {
+    height: 100%;
+    padding: 10px;
+  }
+  #logo{
+    height: 60%;
+  }
+}
